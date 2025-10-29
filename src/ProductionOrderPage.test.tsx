@@ -14,7 +14,7 @@ jest.mock('antd', () => {
     return {
         __esModule: true,
         Form: { useForm: () => [ {}, jest.fn() ] },
-        Input: (props: any) => <input aria-label={props.label} {...props} />, // Añadido aria-label para accesibilidad
+        Input: (props: any) => <input aria-label={props.label} {...props} />,
         InputNumber: (props: any) => <input type="number" aria-label={props.label} {...props} />,
         DatePicker: (props: any) => (
             <input
